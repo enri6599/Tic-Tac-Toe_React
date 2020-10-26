@@ -103,12 +103,12 @@ class Game extends Component {
     });
 
     let status;
-    if(this.state.stepNumber==9){
-      status='Pareggio'
-    }
-    else if (winner) {
+    
+    if (winner) {
       status = 'Winner: ' + winner.winner;
-    } else {
+    } else if(this.state.stepNumber==9){
+      status='Pareggio'
+    }else{
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 

@@ -7,6 +7,10 @@ ol, ul {
   padding-left: 30px;
 }
 
+table{
+  border-collapse: collapse;
+}
+
 .board-row:after {
   clear: both;
   content: "";
@@ -30,6 +34,10 @@ ol, ul {
   padding: 0;
   text-align: center;
   width: 34px;
+}
+
+.selected{
+  background: yellow;
 }
 
 .square:focus {
